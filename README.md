@@ -48,7 +48,7 @@ allure serve build/allure-results
 ```
 
 ###  :rocket:  Удаленный запуск (в Jenkins):
-1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/restful-booker-api///">проект</a> и нажать **Собрать сейчас**
+1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/24-ShocoArts-JSONPlaceholder/">проект</a> и нажать **Собрать сейчас**
 
 ![This is an image](/images/screens/jenkins.jpg)
 
