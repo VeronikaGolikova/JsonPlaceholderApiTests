@@ -58,6 +58,7 @@ allure serve build/allure-results
 ![This is an image](/images/screens/allureReport.png)
 
 **Статус прогона тестов в диаграммах**
+
 ![This is an image](/images/screens/graph.png)
 
 **Тесты**
