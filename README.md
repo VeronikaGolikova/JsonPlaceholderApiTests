@@ -2,7 +2,7 @@
 ### Веб сайт <a target="_blank" href="https://jsonplaceholder.typicode.com/">{JSON} Placeholder</a>
 
 <p align="center">
-<img title="restful-booker" src="images/screens/api.jpg">
+<img title="restful-booker" src="images/screens/api.jpeg">
 </p>
 
 
@@ -48,29 +48,29 @@ allure serve build/allure-results
 ```
 
 ###  :rocket:  Удаленный запуск (в Jenkins):
-1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/24-ShocoArts-JSONPlaceholder/">проект</a> и нажать **Собрать сейчас**
+1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/24-ShocoArts-JSONPlaceholder/">проект</a> и нажать **Build with Parameters**
 
-![This is an image](/images/screens/jenkins.jpg)
+![This is an image](/images/screens/jenkins.png)
 
 
 ###  Отчет в Allure report
 
-![This is an image](/images/screens/allureReport.jpg)
+![This is an image](/images/screens/allureReport.png)
 
 **Статус прогона тестов в диаграммах**
-![This is an image](/images/screens/graph.jpg)
+![This is an image](/images/screens/graph.png)
 
 **Тесты**
 
 <p align="center">
-<img title="Allure Tests" src="images/screens/reports.jpg">
+<img title="Allure Tests" src="images/screens/reports.png">
 </p>
 
 ## :rocket: Интеграция с Allure TestOps
 
-![This is an image](/images/screens/allureCases.jpg)
+![This is an image](/images/screens/allureCases.png)
 
-![This is an image](/images/screens/allureBoard.jpg)
+![This is an image](/images/screens/allureBoard.png)
 
 ## :rocket: Получение отчетов о прохождении тестов в telegram
 
