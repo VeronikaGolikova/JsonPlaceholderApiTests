@@ -28,6 +28,13 @@
 <a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
 </p>
 
+- В данном проекте автотесты написаны на языке <code>Java</code> с использованием фреймворка для тестирования <code>REST Assured</code>.
+- В качестве сборщика был использован - <code>Gradle</code>.
+- Использован фреймворк <code>JUnit 5</code>.
+- Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и интеграцией с Allure TestOps. 
+- Результат прогона тестов отправляется в <code>Telegram</code> при помощи бота.
+
+
 ## :rocket:  Список тестов и проверок
 
 - [x] getPostInformation - получение информации поста по его id
