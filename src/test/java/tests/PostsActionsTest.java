@@ -13,8 +13,8 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static specs.GeneralSpec.loggingResponseSpec;
 import static specs.GeneralSpec.requestSpec;
 import static specs.GeneralSpec.responseSpec200OkWithLogging;
@@ -44,10 +44,10 @@ public class PostsActionsTest extends TestBase {
                         .extract().as(PostsResponseModel.class));
 
         step("Проверка полей пользователя в ответе", () ->
-                assertAll(() -> assertEquals(1, response.getUserId()),
-                          () -> assertEquals(1, response.getId()),
-                          () -> assertEquals(titleTextUser1, response.getTitle()),
-                          () -> assertEquals(bodyTextUser1, response.getBody())
+                assertAll(() -> assertThat(response.getUserId()).isEqualTo(1),
+                          () -> assertThat(response.getId()).isEqualTo(1),
+                          () -> assertThat(response.getTitle()).isEqualTo(titleTextUser1),
+                          () -> assertThat(response.getBody()).isEqualTo(bodyTextUser1)
                 )
         );
     }
@@ -72,10 +72,10 @@ public class PostsActionsTest extends TestBase {
                         .extract().as(PostsResponseModel.class));
 
         step("Проверка полей пользователя в ответе", () ->
-                assertAll(() -> assertEquals(101, response.getId()),
-                          () -> assertEquals(1, response.getUserId()),
-                          () -> assertEquals(newTitle, response.getTitle()),
-                          () -> assertEquals(newBody, response.getBody())
+                assertAll(() -> assertThat(response.getId()).isEqualTo(101),
+                          () -> assertThat(response.getUserId()).isEqualTo(1),
+                          () -> assertThat(response.getTitle()).isEqualTo(newTitle),
+                          () -> assertThat(response.getBody()).isEqualTo(newBody)
                 )
         );
     }
@@ -101,10 +101,10 @@ public class PostsActionsTest extends TestBase {
                         .extract().as(PostsResponseModel.class));
 
         step("Проверка полей пользователя в ответе", () ->
-                assertAll(() -> assertEquals(1, response.getId()),
-                          () -> assertEquals(1, response.getUserId()),
-                          () -> assertEquals(newTitle, response.getTitle()),
-                          () -> assertEquals(newBody, response.getBody())
+                assertAll(() -> assertThat(response.getId()).isEqualTo(1),
+                          () -> assertThat(response.getUserId()).isEqualTo(1),
+                          () -> assertThat(response.getTitle()).isEqualTo(newTitle),
+                          () -> assertThat(response.getBody()).isEqualTo(newBody)
                 )
         );
     }
@@ -129,10 +129,10 @@ public class PostsActionsTest extends TestBase {
                         .extract().as(PostsResponseModel.class));
 
         step("Проверка полей пользователя в ответе", () ->
-                assertAll(() -> assertEquals(1, response.getId()),
-                          () -> assertEquals(1, response.getUserId()),
-                          () -> assertEquals(newTitle, response.getTitle()),
-                          () -> assertEquals(newBody, response.getBody())
+                assertAll(() -> assertThat(response.getId()).isEqualTo(1),
+                          () -> assertThat(response.getUserId()).isEqualTo(1),
+                          () -> assertThat(response.getTitle()).isEqualTo(newTitle),
+                          () -> assertThat(response.getBody()).isEqualTo(newBody)
                 )
         );
     }
