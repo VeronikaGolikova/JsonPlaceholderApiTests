@@ -44,7 +44,7 @@ gradle clean test
 
 Получение отчёта:
 ```bash
-allure serve build/allure-results
+gradle allureServe
 ```
 
 ###  :rocket:  Удаленный запуск (в Jenkins):
@@ -53,7 +53,8 @@ allure serve build/allure-results
 ![This is an image](/images/screens/jenkins.png)
 
 
-###  Отчет в Allure report
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="images/logo/Allure.svg"> [Пример](https://jenkins.autotests.cloud/job/24-ShocoArts-JSONPlaceholder/3/allure/) Allure-отчета
+### Основаня страница отчета
 
 ![This is an image](/images/screens/allureReport.png)
 
@@ -67,12 +68,18 @@ allure serve build/allure-results
 <img title="Allure Tests" src="images/screens/reports.png">
 </p>
 
-## :rocket: Интеграция с Allure TestOps
+<a id="allure-testops"></a>
+## <img alt="Allure" height="25" src="images/logo/Allure_TO.svg" width="25"/></a> Интеграция с <a target="_blank" href="https://allure.autotests.cloud/launch/38188">Allure TestOps</a>
 
 ![This is an image](/images/screens/allureCases.png)
 
 ![This is an image](/images/screens/allureBoard.png)
 
-## :rocket: Получение отчетов о прохождении тестов в telegram
+## <img width="4%" style="vertical-align:middle" title="Telegram" src="images/logo/Telegram.svg"> [Уведомления в Telegram](https://t.me/Golikova_Veronika_Alert_Bot) с использованием бота
 
-![This is an image](/images/screens/tg.jpg)
+После завершения сборки и прохождения всех тестовых сценариев в [Telegram канал](https://t.me/Golikova_Veronika_Alert_Bot) приходит оповещение с отчетом о результатах прохождения автотестов.
+
+<p align="center">
+<img width="70%" title="Уведомление в Telegram" src="images/screens/tg.jpg">
+</p>
+
